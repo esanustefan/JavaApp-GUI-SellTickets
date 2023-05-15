@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo7.UserController">
+   <children>
+      <TableView fx:id="MatchesTW" layoutX="37.0" layoutY="47.0" prefHeight="306.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="26.4000244140625" text="id" />
+            <TableColumn fx:id="team1Column" prefWidth="139.20001220703125" text="Echipa 1" />
+            <TableColumn fx:id="team2Column" prefWidth="128.79998779296875" text="Echipa 2" />
+            <TableColumn fx:id="ticketPriceColumn" minWidth="2.39996337890625" prefWidth="62.4000244140625" text="Pret Bilet" />
+            <TableColumn fx:id="availableTicketsColumn" prefWidth="118.4000244140625" text="Bilete Disponibile" />
+            <TableColumn fx:id="soldOutMessageColumn" prefWidth="68.79998779296875" />
+        </columns>
+      </TableView>
+      <Button fx:id="FilterBtn" layoutX="463.0" layoutY="14.0" mnemonicParsing="false" onAction="#onClickFilter" text="Vezi doar disponibile" />
+      <Button fx:id="LogOutBtn" layoutX="71.0" layoutY="360.0" mnemonicParsing="false" onAction="#onClickLogOut" text="Log Out" />
+      <Button fx:id="RefreshBtn" layoutX="475.0" layoutY="360.0" mnemonicParsing="false" onAction="#onClickRefresh" text="Refresh" />
+      <Button fx:id="UndoBtn" layoutX="348.0" layoutY="14.0" mnemonicParsing="false" onAction="#undoFilter"  text="Inapoi" />
+   </children>
+</AnchorPane>

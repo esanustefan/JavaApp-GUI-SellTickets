@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo7.SellTicketController">
+   <children>
+      <TextField fx:id="NameTF" layoutX="95.0" layoutY="88.0" prefHeight="26.0" prefWidth="265.0" />
+      <TextField fx:id="NumberOfTicketsTF" layoutX="95.0" layoutY="159.0" />
+      <Label layoutX="95.0" layoutY="61.0" text="Introduceti numele si prenumele clientului :" />
+      <Label layoutX="95.0" layoutY="131.0" text="Introduceti numarul de bilete :" />
+      <Button fx:id="BuyTicketBtn" layoutX="274.0" layoutY="264.0" mnemonicParsing="false" onAction="#onClickBuyTicket" text="Cumparati " />
+      <Label fx:id="errorLabel" layoutX="181.0" layoutY="304.0" prefHeight="47.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>
